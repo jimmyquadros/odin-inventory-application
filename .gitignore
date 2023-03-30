@@ -1,3 +1,5 @@
+populatedb.js
+.env
 # Logs
 logs
 *.log
