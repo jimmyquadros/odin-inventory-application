@@ -1,8 +1,141 @@
+html, body {
+  height: 100%;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font: 1.25rem "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea,
+select {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid black;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: inherit;
+  border: 0;
+  width: min-content;
+  padding: 5px 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+textarea,
+.text-input {
+  width: 250px;
+}
+
+.number-input {
+  width: 50px;
+}
+
+.head-container {
+  background-color: white;
+}
+
+.body-container {
+  height: 100%;
+  margin: 0 15% 0 15%;
+}
+
+.site-nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(198, 189, 189);
+}
+
+.site-nav a {
+  color: white;
+  font-weight:bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.logo1{
+  color: rgb(198, 189, 189);
+}
+
+.list-grid {
+  display: grid;
+  width: min-content;
+  gap: 2px;
+  background-color: black;
+  margin: 0 0 0 50px;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+.list-grid li {
+  background-color: white;
+  padding: .5rem}
+
+.detail-list {
+  grid-template-columns: 1fr;
+}
+
+.category-list {
+  grid-template-columns: 1fr min-content;
+}
+
+.form-grid {
+  background-color: white;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid black;
+}
+
+.form-grid button {
+  justify-self: end;
+}
+
+.item-list {
+  grid-template-columns: 1fr 1fr;
+}
+
+.description {
+  margin: 0 0 0 25px;
 }

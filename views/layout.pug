@@ -2,6 +2,21 @@ doctype html
 html
   head
     title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    div.head-container
+      div.logo-container  
+        h1.logo 
+          span.logo1 FOO
+          span.logo2 BAR SUPPLY
+      ul.site-nav
+        li 
+          a(href='/') HOME
+        li 
+          a(href='/categories') CATEGORIES
+        li 
+          a(href='/items') ITEMS
+    div(class='body-container')
+      block content

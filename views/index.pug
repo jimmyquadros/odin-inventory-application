@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h3 Welcome to FooBar Supply, your number one barware inventory tracker.  So long as you are not really a bar that needs any kind of tracking as this is just a practice Express website.
+
+  if error 
+    h3 Whoops!  There was an error getting data! 
+  else 
+    h3 Currently tracking:
+
+    ul 
+      li 
+        h3 !{data.item_count} items 
+      li 
+        h3 across !{data.category_count} categories

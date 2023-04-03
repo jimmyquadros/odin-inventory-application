@@ -2,13 +2,12 @@ var express = require('express');
 var router = express.Router();
 
 // Require controller modules
+const index_controller = require('../controllers/indexController');
 const item_controller = require('../controllers/itemController');
 const category_controller = require('../controllers/categoryController');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'TODO' });
-});
+router.get('/', index_controller.index_get);
 
 // CATEGORY ROUTES
 

@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+  h1 #{category.name}
+
+  p.description #{category.description}
+
+  ul.list-grid.description-list
+    li
+      div Items 
+    each item in items 
+      li
+        a(href=item.url) #{item.name}
+    else 
+      li No Items
